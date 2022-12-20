@@ -10,7 +10,7 @@ def cpu_grayscale(image):
         return image
 
     # Convert image to grayscale using luminosity formula
-    return 0.21 * image[:,:,0] + 0.72 * image[:,:,1] + 0.07 * image[:,:,2]
+    return 0.3 * image[:,:,0] + 0.59 * image[:,:,1] + 0.11 * image[:,:,2]
 
 @cuda.jit
 def gpu_grayscale_kernel(image, result):
